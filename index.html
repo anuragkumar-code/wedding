@@ -20,6 +20,44 @@
    <body>
 
       <style>
+         .friend .img-round {
+            position: relative!important;
+            display: inline-block!important;
+            width: 150px!important;
+            height: 150px!important;
+            margin: auto!important;
+         }
+
+         .friend .img-round .img img {
+            width: 100%!important;
+            height: 100%!important;
+            border-radius: 50%!important;
+         }
+
+         .friend .dashed-border circle {
+            fill: none!important;
+            stroke: #ddd!important;
+            stroke-width: 2!important;
+            stroke-dasharray: 4 2!important;
+         }
+
+         .friend h2 {
+            font-size: 18px!important;
+            margin-top: 15px!important;
+            line-height: 1.4!important;
+         }
+
+         .friend span {
+            font-size: 14px!important;
+            color: #999!important;
+         }
+
+         @media (min-width: 768px) {
+            .col-sm-2 {
+               width: 20%!important;
+            }
+         }
+
          @media (max-width: 768px) {
             #wedding .row {
                display: block!important; 
@@ -28,6 +66,14 @@
             #wedding .col-md-4, #wedding .col-sm-4, #wedding .col-xs-12 {
                width: 100%!important;
                margin-bottom: 20px!important; 
+            }
+
+            .friend .col-xs-12 {
+               margin-bottom: 30px;
+            }
+
+            .friend h2 {
+               font-size: 16px;
             }
          }
       </style>
@@ -57,11 +103,10 @@
                         </a>
                      </div>
                      <ul>
-                        <li><a class="scroll" href="#story">Love story</a></li>
-                        <li><a class="scroll" href="#wedding">The wedding</a></li>
-                        <li><a class="scroll" href="#album">Photo album</a></li>
-                        <li><a class="scroll" href="#friend">Friends</a></li>
-                        <li><a class="scroll" href="#rsvp">RSVP</a></li>
+                        <li><a class="scroll" href="#story">Story</a></li>
+                        <li><a class="scroll" href="#wedding">The Wedding</a></li>
+                        <li><a class="scroll" href="#album">Photo Album</a></li>
+                        <li><a class="scroll" href="#host">Hosts</a></li>
                      </ul>
                   </nav>
                </div>
@@ -99,7 +144,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-sm-12 text-center mb-100">
-                     <h1 class="title">Our love story</h1>
+                     <h1 class="title">Our Story</h1>
                      <p>The Story of our love and the Wedding</p>
                   </div>
                </div>
@@ -334,36 +379,69 @@
             </div>
          </section>
 
-         <section id="friend" class="friend bg-grey pt-120 pb-120">
+         <section id="host" class="friend bg-grey pt-120 pb-120">
             <div class="container">
                <div class="row">
                   <div class="col-sm-12 text-center mb-100">
-                     <h1 class="title">Host</h1>
-                     <p>We are lucky to have them in our side</p>
+                     <h1 class="title">Hosts</h1>
+                     <p>We are lucky to have you join us in our celebration of love and togetherness.</p>
                   </div>
                </div>
-               <div class="row">
-                  <div class="col-sm-4  col-sm-offset-2 text-center">
+               <div class="row text-center">
+                  <div class="col-sm-2 col-xs-12 mb-40">
                      <div class="img-round">
-                        <div class="img"><img src="img/13.png" alt=""></div>
-                        <svg viewBox="0 0 103 103" version="1.1" xmlns="http://www.w3.org/2000/svg"  class="dashed-border">
+                        <div class="imgs">
+                           <img src="images/host_1.png" alt="Host 1" class="img-responsive">
+                        </div>
+                        <svg viewBox="0 0 103 103" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dashed-border">
                            <circle cx="50%" cy="50%" r="50" />
                         </svg>
                      </div>
+                     <h2 class="heavy mt-20">Daya Shankar Prasad<br><span>Groom's Father</span></h2>
                   </div>
-                  <div class="col-sm-4  text-center">
-                     <div class="img-round ">
-                        <div class="img"><img src="img/12.png" alt=""></div>
-                        <svg viewBox="0 0 103 103" version="1.1" xmlns="http://www.w3.org/2000/svg"  class="dashed-border">
+                  <div class="col-sm-2 col-xs-12 mb-40">
+                     <div class="img-round">
+                        <div class="imgs">
+                           <img src="images/host_2.png" alt="Host 2" class="img-responsive">
+                        </div>
+                        <svg viewBox="0 0 103 103" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dashed-border">
                            <circle cx="50%" cy="50%" r="50" />
                         </svg>
                      </div>
+                     <h2 class="heavy mt-20">Saroj<br><span>Groom's Mother</span></h2>
                   </div>
-                  <div class="col-sm-4 col-sm-offset-2 text-center">
-                     <h2 class="heavy mt-20">Lisa Anderton<br><span>Bridesmaid </span></h2>
+                  <div class="col-sm-2 col-xs-12 mb-40">
+                     <div class="img-round">
+                        <div class="imgs">
+                           <img src="images/host_3.png" alt="Host 3" class="img-responsive">
+                        </div>
+                        <svg viewBox="0 0 103 103" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dashed-border">
+                           <circle cx="50%" cy="50%" r="50" />
+                        </svg>
+                     </div>
+                     <h2 class="heavy mt-20">Abhishek<br><span>Groom's Brother</span></h2>
                   </div>
-                  <div class="col-sm-4  text-center">
-                     <h2 class="heavy mt-20">Jimmy Nicholson<br><span>Groomsman </span></h2>
+                  <div class="col-sm-2 col-xs-12 mb-40">
+                     <div class="img-round">
+                        <div class="imgs">
+                           <img src="images/host_4.png" alt="Host 4" class="img-responsive">
+                        </div>
+                        <svg viewBox="0 0 103 103" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dashed-border">
+                           <circle cx="50%" cy="50%" r="50" />
+                        </svg>
+                     </div>
+                     <h2 class="heavy mt-20">Jyoti<br><span>Groom's Bhabhi</span></h2>
+                  </div>
+                  <div class="col-sm-2 col-xs-12 mb-40">
+                     <div class="img-round">
+                        <div class="imgs">
+                           <img src="images/host_5.png" alt="Host 4" class="img-responsive">
+                        </div>
+                        <svg viewBox="0 0 103 103" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dashed-border">
+                           <circle cx="50%" cy="50%" r="50" />
+                        </svg>
+                     </div>
+                     <h2 class="heavy mt-20">Aarav<br><span>Groom's Nephew</span></h2>
                   </div>
                </div>
                <div class="row">
@@ -371,16 +449,16 @@
                      <div class="circle-dashed bg green relative">
                         <div class="round-circle  green before">
                            <svg viewBox="0 0 103 103" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dashed-border">
-                              <circle cx="50%" cy="50%" r="50"/>
+                              <circle cx="50%" cy="50%" r="50" />
                            </svg>
-                           <i class="icon-quote"></i>
+                           <i class="fa-solid fa-heart"></i>
                         </div>
                      </div>
                      <div class="block-quote">
-                        <blockquote class="mt-20">Friendship... is not something you learn in school. But if you haven't learned the meaning 
-                           of friendship, you really haven't learned anything.
+                        <blockquote class="mt-20">
+                           "In a world of a billion people, finding someone to share your life with is a divine blessing. 
+                           Let the colors of love and joy paint this beautiful union forever."
                         </blockquote>
-                        <h2 class="heavy uppercase mt-20">We love you Lisa and Jimmy</h2>
                      </div>
                   </div>
                </div>
